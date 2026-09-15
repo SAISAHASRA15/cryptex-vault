@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptex Vault</title>
+    
+    <link rel="stylesheet" href="css/threat.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+                <h2>Cryptex Vault</h2>
+
+                <nav class="sidebar-nav">
+                    <a href="dashboard.html" >Dashboard</a>
+                    <a href="threat.html" class="active">Threats</a>
+                    <a href="report-incident.html">Incidents</a>
+                    
+                </nav>
+            </div>
+            
+
+            <div class="sidebar-footer">
+                <p>Security Team</p>
+                <button>
+                    <a href="login.html">
+                        Logout
+                    </a>
+                </button>
+            </div>
+
+        </aside>
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="page-header">
+                <h1>Threat Management</h1>
+                <p>Monitor, analyze and respond to security threats.</p>
+            </section>
+            <section class="threat-stats">
+
+                <div class="stat-card">
+                    <h3>Active Threats</h3>
+                    <span>12</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Blocked Attacks</h3>
+                    <span>352</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Critical Threats</h3>
+                    <span>4</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Protected Systems</h3>
+                    <span>1200</span>
+                </div>
+
+            </section>
+            
+            <section class="threat-filters">
+
+                <button data-filter="all">All</button>
+                <button data-filter="critical">Critical</button>
+                <button data-filter="high">High</button>
+                <button data-filter="medium">Medium</button>
+                <button data-filter="low">Low</button>
+
+            </section>
+
+            <section class="threat-content">
+
+                <!-- Active Threats -->
+
+                <section class="active-threats">
+
+                    <h2>Active Threats</h2>
+
+                    <div class="threat-card" data-severity="high">
+
+                        <div class="threat-info">
+                            <h3>Phishing Attempt</h3>
+
+                            <p>
+                                Severity:
+                                <span class="high">High</span>
+                            </p>
+
+                            <p>
+                                Status:
+                                <span class="blocked">Blocked</span>
+                            </p>
+                        </div>
+
+                        <div class="threat-meta">
+                            <p>12 June 2026</p>
+                            <p>Email Gateway</p>
+                        </div>
+
+                    </div>
+
+                    <div class="threat-card" data-severity="critical">
+
+                        <div class="threat-info">
+                            <h3>Malware Detected</h3>
+
+                            <p>
+                                Severity:
+                                <span class="critical">Critical</span>
+                            </p>
+
+                            <p>
+                                Status:
+                                <span class="quarantined">Quarantined</span>
+                            </p>
+                        </div>
+
+                        <div class="threat-meta">
+                            <p>12 June 2026</p>
+                            <p>Endpoints</p>
+                        </div>
+
+                    </div>
+
+                    <div class="threat-card" data-severity="medium">
+
+                        <div class="threat-info">
+                            <h3>Brute Force Attack</h3>
+
+                            <p>
+                                Severity:
+                                <span class="medium">Medium</span>
+                            </p>
+
+                            <p>
+                                Status:
+                                <span class="monitoring">Monitoring</span>
+                            </p>
+                        </div>
+
+                        <div class="threat-meta">
+                            <p>12 June 2026</p>
+                            <p>VPN Access</p>
+                        </div>
+
+                    </div>
+
+                    <div class="threat-card" data-severity="low">
+
+                        <div class="threat-info">
+                            <h3>Unauthorized Device</h3>
+
+                            <p>
+                                Severity:
+                                <span class="low">Low</span>
+                            </p>
+
+                            <p>
+                                Status:
+                                <span class="blocked">Blocked</span>
+                            </p>
+                        </div>
+
+                        <div class="threat-meta">
+                            <p>12 June 2026</p>
+                            <p>External Devices</p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Right Sidebar -->
+
+                <aside class="threat-sidebar">
+
+                    <div class="timeline-card">
+
+                        <h2>Threat Timeline</h2>
+
+                        <div class="timeline-item">
+                            <span>12:01 PM</span>
+                            <p>Phishing Attempt Blocked</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span>12:05 PM</span>
+                            <p>Malware Quarantined</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span>12:08 PM</span>
+                            <p>Firewall Rule Updated</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span>12:12 PM</span>
+                            <p>Brute Force Attack Detected</p>
+                        </div>
+
+                    </div>
+
+                    <div class="sources-card">
+
+                        <h2>Threat Sources</h2>
+
+                        <div class="source">
+                            <span>Email Gateway</span>
+                            <span>35%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress" style="width:35%;"></div>
+                        </div>
+
+                        <div class="source">
+                            <span>Web Traffic</span>
+                            <span>25%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress" style="width:25%;"></div>
+                        </div>
+
+                        <div class="source">
+                            <span>Endpoints</span>
+                            <span>20%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress" style="width:20%;"></div>
+                        </div>
+
+                        <div class="source">
+                            <span>VPN Access</span>
+                            <span>12%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress" style="width:12%;"></div>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </section>
+       
+        </main>
+    </div>
+
+
+
+    <script src="threat.js"></script>
+</body>
+</html> 

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptex Vault</title>
+    
+    <link rel="stylesheet" href="css/report-incident.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <h2>Cryptex Vault</h2>
+
+                <nav class="sidebar-nav">
+                    <a href="dashboard.html" >Dashboard</a>
+                    <a href="threat.html">Threats</a>
+                    <a href="report-incident.html" class="active">Incidents</a>
+                    
+                    
+                </nav>
+            </div>
+            
+
+            <div class="sidebar-footer">
+                <p>Security Team</p>
+                <button>
+                    <a href="login.html">Logout</a></button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <section class="report-header">
+                <h1>Report a Security Incident</h1>
+                <p>
+                    Help us protect your organization by reporting
+                    suspicious activity or cybersecurity incidents.
+                </p>
+            </section>
+
+            <section class="report-grid">
+
+               <form id="incidentForm" class="report-form-card">
+
+                    <h2>Incident Details</h2>
+                    <p class="form-subtitle">
+                         Provide detailed information to help our security team investigate and respond effectively.
+                    </p>
+
+                    <div class="form-section-title">
+                        REPORTER INFORMATION
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="John Smith">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john.smith@company.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="incident-type">Incident Type</label>
+                            <select id="incident-type">
+                                <option>Select incident type</option>
+                                <option>Phishing</option>
+                                <option>Malware</option>
+                                <option>Ransomware</option>
+                                <option>Unauthorized Access</option>
+                                <option>DDoS Attack</option>
+                                <option>Data Breach</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Severity Level</label>
+
+                            <div class="severity-buttons">
+                                <button type="button">Low</button>
+                                <button type="button">Medium</button>
+                                <button type="button">High</button>
+                                <button type="button">Critical</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="system">Affected System</label>
+                        <input type="text" id="system"
+                            placeholder="e.g. Email Server, Database, VPN Gateway">
+                    </div>
+
+                    <div class="form-section-title">
+                        INCIDENT DESCRIPTION
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Incident Description</label>
+                        <textarea id="description" rows="6"
+                            placeholder="Describe the incident in detail..."></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Date & Time</label>
+                            <input type="text" value="Jun 14, 2026 | 10:32 AM" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Incident ID</label>
+                            <input type="text" id="incidentId" readonly>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="form-section-title">
+                        EVIDENCE UPLOAD
+                    </div>
+
+                    <div class="file-upload">
+                        <span class="help">
+                            Drag & Drop screenshots, logs or files here
+                        </span>
+
+                        <button type="button" class="browse-files">
+                            Browse Files
+                        </button>
+                    </div>-->
+                    <div class="form-actions">
+                        <button type="reset" class="btn-secondary">Reset Form</button>
+                        <button type="submit" class="btn-primary">Submit Report</button>
+                    </div>
+
+                </form>
+
+                <div class="report-sidebar">
+                    <div class="guidelines-card">
+                        <h3>Report Guidelines</h3>
+
+                        <ul>
+                            <li>Provide accurate information.</li>
+                            <li>Include relevant timestamps.</li>
+                            <li>Describe suspicious activity clearly.</li>
+                            <li>Do not share passwords or sensitive credentials.</li>
+                            <li>Attach evidence when available.</li>
+                        </ul>
+                    </div>
+                    <div class="recent-incidents-card">
+                        <h3>Recent Incidents</h3>
+
+                        <div class="incident-item">
+                            <h4>🔴 Malware Detected</h4>
+                            <p>5 minutes ago</p>
+                        </div>
+
+                        <div class="incident-item">
+                            <h4>🟠 Phishing Email Report</h4>
+                            <p>12 minutes ago</p>
+                        </div>
+
+                        <div class="incident-item">
+                            <h4>🟡 Failed Login Attempt</h4>
+                            <p>20 minutes ago</p>
+                        </div>
+
+                        <div class="incident-item">
+                            <h4>🔴 Suspicious IP Activity</h4>
+                            <p>35 minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="emergency-card">
+                        <h3>🚨 Emergency Response</h3>
+
+
+                        <p>
+                            Experiencing a critical cybersecurity incident?
+                            Contact our security response team immediately.
+                        </p>
+
+                        <p>Average Response Time: 15 Minutes</p>
+                        <p>24/7 Security Operations Center</p>
+
+                        <button class="btn-primary">
+                            <A href="https://wa.me/+971547445496">Contact Security Team</A>
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+            <div class="security-note">
+                <p>
+                    🔒 Your information is secure with us. All incident reports
+                    are handled confidentially and reviewed by our security team.
+                </p>
+            </div>
+        </main>
+
+        <div class="success-screen" id="successScreen">
+
+            <div class="success-card">
+
+                <div class="success-icon">✓</div>
+
+                <h2>Incident Submitted</h2>
+
+                <p>
+                    Your report has been successfully sent to the
+                    Security Operations Center.
+                </p>
+
+                <div class="success-id">
+                    Incident ID: <span id="generatedId">INC-2026-00452</span>
+                </div>
+
+                <div class="success-actions">
+                    <a href="dashboard.html" class="btn-primary">
+                        Return Dashboard
+                    </a>
+
+                    <button id="newReportBtn" class="btn-secondary">
+                        Submit Another Report
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    
+
+
+    <script src="report-incident.js"></script>
+
+    
+</body>
+</html>

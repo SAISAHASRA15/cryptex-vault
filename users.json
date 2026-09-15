@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "username": "microsoft_admin",
+    "email": "microsoft@client.com",
+    "password": "1234",
+    "company": "microsoft"
+  },
+  {
+    "id": 2,
+    "username": "tesla_admin",
+    "email": "tesla@client.com",
+    "password": "abcd",
+    "company": "tesla"
+  }
+]

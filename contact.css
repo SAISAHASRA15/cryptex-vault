@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#050505;
+    color:white;
+    font-family:Arial, sans-serif;
+    overflow-x:hidden;
+}
+
+.navbar{
+    height:80px;
+    padding:0 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    border-bottom:1px solid #1a1a1a;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#00d9ff;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+.nav-links li{
+    cursor:pointer;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#3B82F6;
+}
+
+.report-btn{
+    background:transparent;
+    color:#00d9ff;
+    
+
+    border:1px solid #00d9ff;
+    border-radius:8px;
+    padding:12px 20px;
+    
+
+    cursor:pointer;
+}
+
+.report-btn:hover{
+    background:#3B82F6;
+    color:white;
+}
+
+.report-btn a{
+    text-decoration: none;
+    color: #00bde0;
+}
+
+
+.report-btn:hover a{
+    color: white;
+}
+
+/*section*/
+
+.contact-container{
+    width:100%;
+    max-width:500px;
+
+    background:#111827;
+    border-radius:15px;
+    padding:60px 50px;
+    box-shadow:0 0 15px rgba(59,130,246,0.08);
+    
+    border:1px solid rgba(59,130,246,0.1);
+}
+
+
+.contact-section{
+    min-height:calc(100vh - 80px);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:50px 20px;
+}
+
+.contact-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.contact-header h1{
+    margin-bottom:10px;
+}
+
+.contact-header p{
+    color:#9ca3af;
+    font-size:0.95rem;
+}
+
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-bottom:20px
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    background:#0b1220;
+    color:white;
+
+    border:1px solid rgba(0,213,255,0.15);
+
+    border-radius:10px;
+
+    padding:14px;
+
+    outline:none;
+}
+
+.security-note{
+    text-align:center;
+
+    margin-top:20px;
+
+    color:#9ca3af;
+
+    font-size:0.8rem;
+}
+
+
+.submit-btn{
+    width:100%;
+
+    padding:14px;
+    
+    border:none;
+    border-radius:10px;
+
+    background:#3B82F6;
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.submit-btn:hover{
+    background:#00bde0;
+    transform: translateY(-5px);
+}
+
+
+.submit-btn a{
+    text-decoration: none;
+    color: white;
+}
+

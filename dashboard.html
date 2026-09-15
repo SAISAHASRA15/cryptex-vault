@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Cryptex Vault</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+                <h2>Cryptex Vault</h2>
+
+                <nav class="sidebar-nav">
+                    <a href="dashboard.html" class="active">Dashboard</a>
+                    <a href="threat.html">Threats</a>
+                    <a href="report-incident.html">Incidents</a>
+                    
+                </nav>
+            </div>
+            
+
+            <div class="sidebar-footer">
+                <p>Security Team</p>
+                <button >
+                    <a href="login.html">Logout</a>
+                </button>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="dashboard-header">
+
+                <div class="header-left">
+                    <h2 id="welcomeText">Welcome back </h2>
+                    <p>Monitor. Detect. <span>Protect.</span></p>
+                </div>
+
+                <div class="header-right">
+
+                    <div class="header-item">
+                        May 27, 2025
+                    </div>
+
+                    <div class="header-item">
+                        12:05 PM
+                    </div>
+
+                    <div class="header-item notification">
+                        🔔
+                        <span class="badge">3</span>
+                    </div>
+
+                    <!--<div class="profile">
+                        🛡️ Security Team
+                    </div>-->
+
+                </div>
+
+            </header>
+
+            <!-- Stats Cards -->
+            <section class="stats-section">
+
+                <div class="stat-card">
+                    <h3>Active Threats</h3>
+                    <span id="activeThreats">12</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Blocked Attacks</h3>
+                    <span id="blockedAttacks">352</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Critical Threats</h3>
+                    <span id="criticalThreats">4</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Protected Systems</h3>
+                    <span id="protectedSystems">1200</span>
+                </div>
+
+            </section>
+
+            <!-- Row 2 -->
+            <section class="top-grid">
+
+                <div class="security-score">
+
+                    <h3>Security Score</h3>
+
+                    <div class="gauge">
+
+                        <svg viewBox="0 0 100 50" class="gauge-svg">
+                            <path class="track-bg" d="M 10 50 A 40 40 0 0 1 90 50" />
+                            <path id="securityGauge" class="track-fill" d="M 10 50 A 40 40 0 0 1 90 50" style="--percent: 92;" />
+                        </svg>
+
+                        <div class="gauge-value">
+                            <span id="scoreValue" class="score-value">50%</span>                            
+                            <p id="scoreStatus" class="score-status">Excellent</p>
+                        </div>
+
+                        <span class="limit-label label-left">0%</span>
+                        <span class="limit-label label-right">100%</span>
+
+                    </div>
+
+                    <div class="score-change">
+                        ↑ 8% from last week
+                    </div>
+
+                </div>
+
+
+
+                <div class="recent-threats">
+
+                    <h3>Recent Threats</h3>
+
+                    <div class="threat-list">
+
+                        <div class="threat-card">
+
+                            <div class="threat-header">
+                                <span class="threat-icon">🛡️</span>
+                                <span class="threat-name">Phishing Attempt</span>
+                            </div>
+
+                            <div class="threat-footer">
+                                <span class="severity high">High</span>
+                                <span class="status blocked">Blocked</span>
+                            </div>
+
+                        </div>
+
+                        <div class="threat-card">
+
+                            <div class="threat-header">
+                                <span class="threat-icon">🦠</span>
+                                <span class="threat-name">Malware Detected</span>
+                            </div>
+
+                            <div class="threat-footer">
+                                <span class="severity critical">Critical</span>
+                                <span class="status quarantined">Quarantined</span>
+                            </div>
+
+                        </div>
+
+                        <div class="threat-card">
+
+                            <div class="threat-header">
+                                <span class="threat-icon">⚠️</span>
+                                <span class="threat-name">Brute Force Attack</span>
+                            </div>
+
+                            <div class="threat-footer">
+                                <span class="severity medium">Medium</span>
+                                <span class="status monitoring">Monitoring</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="live-feed">
+
+                    <h3>Live Alert Feed</h3>
+
+                    <div class="alert-list">
+
+                        <div class="alert-item">
+
+                            <p class="alert-message">Malware blocked</p>
+                            <span class="alert-time">12:01 PM</span>
+                        </div>
+
+                        <div class="alert-item">
+                            <p class="alert-message">Firewall rules updated</p>
+                            <span class="alert-time">12:03 PM</span>
+                            
+                        </div>
+
+                        <div class="alert-item">
+                            <p class="alert-message">Suspicious login detected</p>
+                            <span class="alert-time">12:05 PM</span>
+                            
+                        </div>
+
+                        <div class="alert-item">
+                            <p class="alert-message">Threat intelligence synced</p>
+                            <span class="alert-time">12:07 PM</span>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Row 3 -->
+            <section class="middle-grid">
+
+                <div class="system-status">
+                    System Status
+                    <div class="system-item">
+                        <span class="service-name">Firewall</span>
+                        <span class="service-status online">Online</span>
+                    </div>
+
+                    <div class="system-item">
+                        <span class="service-name">Email Gateway</span>
+                        <span class="service-status online">Online</span>
+                    </div>
+
+                    <div class="system-item">
+                        <span class="service-name">cloud security</span>
+                        <span class="service-status offline">Offline</span>
+                    </div>
+
+                    <div class="system-item">
+                        <span class="service-name">VPN Gateway</span>
+                        <span class="service-status warning">Warning</span>
+                    </div>
+
+                    <div class="system-item">
+                        <span class="service-name">Threat Intelligence</span>
+                        <span class="service-status online">Online</span>
+                    </div>
+
+                </div>
+
+                <div class="threat-distribution">
+
+                    <h3>Threat Distribution</h3>
+
+                    <div class="distribution-content">
+
+                        <div class="pie-chart">
+
+                            <svg viewBox="0 0 32 32" class="pie-svg">
+
+                                <circle
+                                    r="14"
+                                    cx="16"
+                                    cy="16"
+                                    class="pie-bg">
+                                </circle>
+
+                                <!-- Critical 10% -->
+                                <circle
+                                    r="14"
+                                    cx="16"
+                                    cy="16"
+                                    class="pie-fill critical1"
+                                    stroke-dasharray="10 90"
+                                    stroke-dashoffset="0">
+                                </circle>
+
+                                <!-- High 20% -->
+                                <circle
+                                    r="14"
+                                    cx="16"
+                                    cy="16"
+                                    class="pie-fill high1"
+                                    stroke-dasharray="20 80"
+                                    stroke-dashoffset="-10">
+                                </circle>
+
+                                <!-- Medium 30% -->
+                                <circle
+                                    r="14"
+                                    cx="16"
+                                    cy="16"
+                                    class="pie-fill medium1"
+                                    stroke-dasharray="30 70"
+                                    stroke-dashoffset="-30">
+                                </circle>
+
+                                <!-- Low 40% -->
+                                <circle
+                                    r="14"
+                                    cx="16"
+                                    cy="16"
+                                    class="pie-fill low1"
+                                    stroke-dasharray="40 60"
+                                    stroke-dashoffset="-60">
+                                </circle>
+
+                            </svg>
+
+                        </div>
+
+                        <div class="distribution-legend">
+
+                            <div class="legend-item">
+                                <span class="legend-color critical1"></span>
+                                <span>Critical (4)</span>
+                            </div>
+
+                            <div class="legend-item">
+                                <span class="legend-color high1"></span>
+                                <span>High (8)</span>
+                            </div>
+
+                            <div class="legend-item">
+                                <span class="legend-color medium1"></span>
+                                <span>Medium (12)</span>
+                            </div>
+
+                            <div class="legend-item">
+                                <span class="legend-color low1"></span>
+                                <span>Low (15)</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="network-activity">
+
+                    <h3>Network Activity</h3>
+
+                    <div class="network-stats">
+
+                        <div class="network-item">
+                            <span class="network-label">Incoming Traffic</span>
+                            <span class="network-value">120 MB/s</span>
+                        </div>
+
+                        <div class="network-item">
+                            <span class="network-label">Outgoing Traffic</span>
+                            <span class="network-value">85 MB/s</span>
+                        </div>
+
+                        <div class="network-item">
+                            <span class="network-label">Active Connections</span>
+                            <span class="network-value">1,254</span>
+                        </div>
+
+                        <div class="network-item">
+                            <span class="network-label">Network Uptime</span>
+                            <span class="network-value">99.8%</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Row 4 -->
+            <!--
+            <section class="bottom-grid">
+
+                <div class="incident-reports">
+                    Incident Reports
+                </div>
+
+                <div class="terminal">
+                    Security Terminal
+                </div>
+
+            </section>-->
+
+        </main>
+
+    </div>
+
+
+
+    <script>
+    const company = localStorage.getItem("company");
+
+    document.getElementById("welcomeText").textContent =
+        `Welcome back, ${company} `;
+
+    fetch("dashboard.json")
+        .then(res => res.json())
+        .then(data => {
+
+            const companyData = data[company];
+
+            const score = companyData.securityScore;
+
+            document.getElementById("activeThreats").textContent =
+                companyData.activeThreats;
+
+            document.getElementById("blockedAttacks").textContent =
+                companyData.blockedAttacks;
+
+            document.getElementById("criticalThreats").textContent =
+                companyData.criticalThreats;
+
+            document.getElementById("protectedSystems").textContent =
+                companyData.protectedSystems;
+
+            document.getElementById("securityGauge")
+                .style.setProperty("--percent", score);
+
+            document.getElementById("scoreValue")
+                .textContent = score + "%";
+
+            if (score >= 90) {
+                document.getElementById("scoreStatus").textContent = "Excellent";
+            }
+            else if (score >= 75) {
+                document.getElementById("scoreStatus").textContent = "Good";
+            }
+            else {
+                document.getElementById("scoreStatus").textContent = "Needs Attention";
+            }
+
+        });
+
+                const companyData = data[company];
+                const score = companyData.securityScore;
+                document.getElementById("activeThreats").textContent =
+                    companyData.activeThreats;
+
+                document.getElementById("blockedAttacks").textContent =
+                    companyData.blockedAttacks;
+
+                document.getElementById("criticalThreats").textContent =
+                    companyData.criticalThreats;
+
+                document.getElementById("protectedSystems").textContent =
+                    companyData.protectedSystems;
+                document.getElementById("securityGauge").style.setProperty("--percent", score);
+
+                document.getElementById("scoreValue").textContent = score + "%";
+
+
+                if (score >= 90) {
+                    document.getElementById("scoreStatus").textContent = "Excellent";
+                }
+                else if (score >= 75) {
+                    document.getElementById("scoreStatus").textContent = "Good";
+                }
+                else {
+                    document.getElementById("scoreStatus").textContent = "Needs Attention";
+                }
+    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "name":"Sai Sahasra Tenneti",
+    "role":"Chief Security Officer",
+    "experience":"10 Years",
+    "certification":"CISSP",
+    "specialization":"Threat Intelligence"
+  },
+  {
+    "name":"Siddartha Reddy Damma",
+    "role":"Penetration Tester, Application Security Analyst",
+    "experience":"7 Years",
+    "certification":"OSCP",
+    "specialization":"Ethical Hacking"
+  },
+  {
+    "name":"Mitul V. Kumar",
+    "role":"Security Engineer, SOC Analyst",
+    "experience":"6 Years",
+    "certification":"CEH",
+    "specialization":"Network Security"
+  },
+  {
+    "name":"Sai Vahnay Dabbiru",
+    "role":"Malware Analyst, GRC Analyst",
+    "experience":"5 Years",
+    "certification":"GREM",
+    "specialization":"Malware Analysis"
+  }
+]

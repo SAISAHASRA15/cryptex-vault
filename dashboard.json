@@ -1,0 +1,17 @@
+{
+  "microsoft": {
+    "activeThreats": 12,
+    "blockedAttacks": 352,
+    "criticalThreats": 4,
+    "protectedSystems": 1200,
+    "securityScore": 70
+  },
+
+  "tesla": {
+    "activeThreats": 5,
+    "blockedAttacks": 148,
+    "criticalThreats": 1,
+    "protectedSystems": 450,
+    "securityScore": 98
+  }
+}

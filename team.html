@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - Cryptex Vault</title>
+    <link rel="stylesheet" href="css/team.css">
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                CRYPTEX <span>VAULT</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="password-checker.html">Password Checker</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="report-btn">
+                <a href="login.html">LOGIN</a>
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h2>Our Security Team</h2>
+                    <p>Meet the professionals protecting your systems</p>
+                </div>
+
+                <div class="header-right">
+
+                    <div class="stat">
+                        <h3>4</h3>
+                        <p>Team Members</p>
+                        <span>Experts in Cybersecurity</span>
+                    </div>
+
+                    <div class="stat">
+                        <h3>36+</h3>
+                        <p>Certifications</p>
+                        <span>Industry recognized</span>
+                    </div>
+
+                    <div class="stat">
+                        <h3>100+</h3>
+                        <p>Projects</p>
+                        <span>Successfully secured</span>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- top grid -->
+            <section class="team-grid" id="teamGrid">
+                
+            </section>
+
+
+            <!--last-->
+            <section class="last">
+                <div class="strength">
+                    <h2>Our Team Strength</h2>
+
+                    <p>✓ Certified Experts</p>
+                    <p>✓ Diverse Skill Sets</p>
+                    <p>✓ 24/7 Security Support</p>
+                    <p>✓ Continuous Learning</p>
+                </div>
+
+                <div class="why-us">
+                    <h2>Why Choose Our Team?</h2>
+
+                    <p>✓ Highly certified cybersecurity professionals</p>
+                    <p>✓ 24/7 monitoring and incident response</p>
+                    <p>✓ Advanced threat detection capabilities</p>
+                    <p>✓ Extensive experience across industries</p>
+                    <p>✓ Dedicated to protecting your organization</p>
+                </div>
+
+            </section>
+
+            <section class="about-us">
+                
+                <div class="div-abs">
+                    <h2>About Us</h2> 
+
+                    <p>✓ Dedicated to helping organizations defend against today's rapidly evolving cyber threats.</p>
+
+                    <p>✓ Team of cybersecurity professionals with strong technical expertise, industry certifications, and real-world experience.</p>
+
+                    <p>✓ Specialized in Threat Intelligence, Vulnerability Assessment, Incident Response, Security Monitoring, and Risk Management.</p>
+
+                    <p>✓ Delivering reliable security solutions tailored to the needs of modern businesses.</p>
+
+                    <p>✓ Providing organizations with the tools, knowledge, and protection needed to operate securely in a connected digital world.</p>
+
+                    <p>✓ Focused on identifying threats before they become incidents through proactive security strategies.</p>
+
+                    <p>✓ Helping businesses protect critical data, systems, networks, and organizational reputation.</p>
+
+                    <p>✓ Committed to continuous innovation, operational excellence, and long-term cybersecurity resilience.</p>
+
+                    <p>✓ Building trust through reliable protection, expert guidance, and dedicated security support.</p>
+                </div>
+                
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <script>
+    async function loadTeam() {
+        try {
+            const response = await fetch("team.json");
+            const team = await response.json();
+            const teamGrid = document.getElementById("teamGrid");
+
+            team.forEach(member => {
+                const card = document.createElement("div");
+                card.classList.add("member");
+
+                card.innerHTML = `
+                    <h3>${member.name}</h3>
+                    <h4>${member.role}</h4>
+
+                    <p><strong>Experience:</strong> ${member.experience}</p>
+                    <p><strong>Certification:</strong> ${member.certification}</p>
+                    <p><strong>Specialization:</strong> ${member.specialization}</p>
+                `;
+
+                teamGrid.appendChild(card);
+            });
+        }
+        catch(error) {
+            console.error("Error loading team data:", error);
+        }
+    }
+
+    loadTeam();
+    </script>
+</body>
+</html>

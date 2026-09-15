@@ -1,0 +1,35 @@
+[
+  {
+    "id": "INC-2026-54321",
+    "name": "John Smith",
+    "email": "john@company.com",
+    "incidentType": "Phishing",
+    "severity": "High",
+    "system": "Email Server",
+    "description": "Suspicious email detected",
+    "status": "Open",
+    "reportedAt": "2026-06-23T12:34:56.000Z"
+  },
+  {
+    "id": "INC-2026-50999",
+    "name": "sai",
+    "email": "tesla@client.com",
+    "incidentType": "Unauthorized Access",
+    "severity": "Medium",
+    "system": "database",
+    "description": "hell",
+    "status": "Open",
+    "reportedAt": "2026-06-23T06:12:30.566Z"
+  },
+  {
+    "id": "INC-2026-52972",
+    "name": "Siddartha",
+    "email": "microsoft@client.com",
+    "incidentType": "DDoS Attack",
+    "severity": "Medium",
+    "system": "dw",
+    "description": "afsfbd",
+    "status": "Open",
+    "reportedAt": "2026-06-23T07:52:08.549Z"
+  }
+]
